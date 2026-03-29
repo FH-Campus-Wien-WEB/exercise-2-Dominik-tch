@@ -37,7 +37,7 @@ app.put('/movies/:imdbID', function (req, res) {
       return res.sendStatus(200);
     }
   }
-  movieModel[movie.imdbID] = updatedMovie;
+  movieModel[req.params.imdbID] = updatedMovie;
   res.status(201).json(updatedMovie);
 })
 /* Task 3.1 and 3.2.
