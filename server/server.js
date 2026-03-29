@@ -32,6 +32,7 @@ app.put('/movies/:imdbID', function (req, res) {
   const updatedMovie = req.body;
   for (const movie of Object.values(movieModel)) {
     if (movie.imdbID == req.params.imdbID) {
+      updatedMovie["imdbID"] = movie.imdbID;
       movieModel[movie.imdbID] = updatedMovie;
       return res.sendStatus(200);
     }
