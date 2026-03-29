@@ -1,31 +1,71 @@
 @import url(base.css);
 
+body {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  background-color: #4cd4ec;
+  margin: 0;
+  padding: 20px;
+}
+
+article {
+  background-color: #ffffff;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  padding: 16px;
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(255, 23, 23, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+article:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.45);
+}
+
+img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 12px;
+  display: block;
+  margin-bottom: 10px;
+}
+
 h1 {
   font-size: 200%;
   margin: 8px 0px;
 }
 
-img {
-  border-radius: 12px;
+h2 {
+  margin: 10px 0 5px 0;
 }
 
-article {
-  background-color: lightgray;
-  border-radius: 16px;
-  padding: 16px;
-  margin: 2vw;
+h3 {
+  margin-top: 12px;
+  margin-bottom: 4px;
 }
 
+p {
+  margin: 6px 0;
+  line-height: 1.4;
+}
 span {
-  margin-right: 4px;
+  margin-right: 10px;
+  color: #555;
+}
+
+time {
+  color: #777;
+  font-size: 0.9em;
+  margin-left: 5px;
 }
 
 .genre {
+  background-color: #007BFF;
+  color: white;
   padding: 4px 8px;
-  border: solid black 1px;
-  border-radius: 6px;
-  background-color: darkgray;
-  font-weight: bold;
+  border-radius: 8px;
+  margin-right: 6px;
+  display: inline-block;
+  font-size: 0.8em;
 }
 
 input {
